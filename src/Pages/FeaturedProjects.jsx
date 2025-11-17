@@ -10,7 +10,7 @@ import {
 } from "react-icons/di";
 import { span } from "framer-motion/client";
 
-export default function eaturedProjects() {
+export default function FeaturedProjects() {
   const projects = [
     {
       title: "Job Portal System",
