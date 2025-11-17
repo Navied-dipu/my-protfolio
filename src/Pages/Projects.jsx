@@ -1,4 +1,5 @@
 import React from "react";
+
 import { motion } from "framer-motion";
 import {
   DiReact,
@@ -8,9 +9,7 @@ import {
   DiCss3,
   DiJavascript,
 } from "react-icons/di";
-import { span } from "framer-motion/client";
-
-export default function FeaturedProjects() {
+export default function Projects() {
   const projects = [
     {
       title: "Job Portal System",
@@ -44,7 +43,6 @@ export default function FeaturedProjects() {
       link: "#",
     },
   ];
-
   return (
     <div id="Work" className="py-20 px-4 lg:px-20">
       <h2 className="text-3xl lg:text-4xl font-bold text-center font-orbitron text-zinc-800 bitron mb-14">

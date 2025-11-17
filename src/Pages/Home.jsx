@@ -2,7 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import SkillCards from "./Skill";
 import ContactForm from "./ContactForm";
-import FeaturedProjects from "./featuredProjects";
+import Projects from "./Projects";
+
 
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
     <div id="Home">
       <Hero></Hero>
       <SkillCards></SkillCards>
-    <FeaturedProjects></FeaturedProjects>
+   <Projects></Projects>
       <ContactForm></ContactForm>
     </div>
   );
