@@ -1,4 +1,4 @@
-import React from "react";
+import banner from"../assets/banner.png";
 
 export default function Hero() {
   return (
@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="hero-content flex-col lg:flex-row-reverse gap-8 lg:gap-12">
         {/* Image */}
         <img
-          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-          className="max-w-sm rounded-lg shadow-2xl"
+          src={banner}
+          className="max-w-md rounded-lg"
           alt="Hero Image"
         />
 

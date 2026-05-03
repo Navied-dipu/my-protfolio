@@ -8,10 +8,10 @@ import Projects from "./Projects";
 
 export default function Home() {
   return (
-    <div id="Home">
+    <div >
       <Hero></Hero>
       <SkillCards></SkillCards>
-   <Projects></Projects>
+      <Projects></Projects>
       <ContactForm></ContactForm>
     </div>
   );
