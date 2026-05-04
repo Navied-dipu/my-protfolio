@@ -155,7 +155,7 @@ export default function ContactForm() {
               </div>
               
               <MagneticButton className="w-full">
-                <button type="submit" className="w-full bg-accent hover:bg-blue-600 text-white font-bold py-5 rounded-2xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+                <button type="submit" className="w-full bg-text-primary text-bg-primary hover:opacity-90 font-bold py-5 rounded-2xl transition-all shadow-xl dark:shadow-[0_0_30px_rgba(255,255,255,0.1)]">
                   Send Message
                 </button>
               </MagneticButton>

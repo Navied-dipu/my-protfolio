@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 
 .vercel
+.next/
+out/
+build/
+.env*.local
+.pnpm-debug.log*
+yarn-error.log*

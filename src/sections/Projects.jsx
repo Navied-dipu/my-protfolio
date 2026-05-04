@@ -107,7 +107,7 @@ export default function Projects() {
             <h2 className="text-4xl md:text-7xl font-bold font-display text-center mb-10 md:mb-12">
               Interested in <br /> collaboration?
             </h2>
-            <MagneticButton className="px-10 py-4 lg:px-12 lg:py-5 bg-accent text-white rounded-full font-bold text-lg lg:text-xl shadow-[0_0_40px_rgba(59,130,246,0.4)]">
+            <MagneticButton className="px-10 py-4 lg:px-12 lg:py-5 bg-text-primary text-bg-primary hover:opacity-90 rounded-full font-bold text-lg lg:text-xl shadow-2xl dark:shadow-[0_0_40px_rgba(255,255,255,0.1)] transition-all">
               Start a Conversation
             </MagneticButton>
           </div>

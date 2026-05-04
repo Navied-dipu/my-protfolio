@@ -74,8 +74,8 @@ export default function Hero() {
               Available for work
             </span>
             <h1 ref={titleRef} className="text-4xl md:text-7xl lg:text-8xl font-bold font-display leading-[1.1] mb-6 md:mb-8">
-              React & <br className="hidden md:block" /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Next.js</span> Expert
+              React &<br className="hidden md:block" /> 
+              <span className=" bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Next.js</span> Expert
             </h1>
             <p className="text-base md:text-xl text-text-secondary max-w-xl mx-auto lg:mx-0 mb-8 md:mb-10 leading-relaxed">
               {personalInfo.workType}
