@@ -13,7 +13,18 @@ import { FiExternalLink, FiGithub, FiX } from 'react-icons/fi';
 export default function Projects() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-  const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedProject, setSelectedProject] = useState(null);
+  
+    useEffect(() => {
+      if (selectedProject) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'unset';
+      }
+      return () => {
+        document.body.style.overflow = 'unset';
+      };
+    }, [selectedProject]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -129,7 +140,8 @@ export default function Projects() {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-4xl max-h-[90vh] bg-bg-primary rounded-[2rem] border border-white/10 overflow-y-auto no-scrollbar shadow-2xl"
+              data-lenis-prevent
+              className="relative w-full max-w-4xl max-h-[90vh] bg-bg-primary rounded-[2rem] border border-white/10 overflow-y-auto shadow-2xl"
             >
               <button 
                 onClick={() => setSelectedProject(null)}
@@ -174,14 +186,18 @@ export default function Projects() {
 
                     <div className="space-y-4 pt-8">
                       <a href={selectedProject.liveLink} target="_blank" rel="noopener noreferrer" className="block">
-                        <button className="w-full py-4 bg-accent text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-blue-600 transition-colors">
-                          <FiExternalLink /> Live Demo
-                        </button>
+                        <MagneticButton className="w-full">
+                          <div className="w-full py-4 px-8 bg-text-primary text-bg-primary rounded-xl font-bold flex items-center justify-center gap-3 hover:opacity-90 transition-all shadow-lg">
+                            <FiExternalLink /> Live Demo
+                          </div>
+                        </MagneticButton>
                       </a>
                       <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer" className="block">
-                        <button className="w-full py-4 border border-white/10 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-white/5 transition-colors">
-                          <FiGithub /> GitHub Repo
-                        </button>
+                        <MagneticButton className="w-full">
+                          <div className="w-full py-4 px-7 border border-text-primary/20 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-text-primary hover:text-bg-primary transition-all">
+                            <FiGithub /> GitHub Repo
+                          </div>
+                        </MagneticButton>
                       </a>
                     </div>
                   </div>
