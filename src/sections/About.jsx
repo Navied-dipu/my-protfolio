@@ -94,8 +94,8 @@ export default function About() {
             <div className="glass p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border border-white/5 space-y-6">
               <div>
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
-                  <h4 className="text-lg md:text-xl font-bold">MERN Stack Developer (Freelance)</h4>
-                  <span className="text-accent text-xs md:text-sm font-bold">2024 - Present</span>
+                  <h4 className="text-lg md:text-xl font-bold">MERN Stack Developer </h4>
+                  <span className="text-accent text-xs md:text-sm font-bold">2026 - Present</span>
                 </div>
                 <p className="text-sm md:text-base text-text-secondary">Building end-to-end web applications for international clients, focusing on scalability and premium UX.</p>
               </div>
@@ -103,7 +103,7 @@ export default function About() {
               <div>
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
                   <h4 className="text-lg md:text-xl font-bold">Frontend Intern</h4>
-                  <span className="text-accent text-xs md:text-sm font-bold">2023 (6 Months)</span>
+                  <span className="text-accent text-xs md:text-sm font-bold">2026 (6 Months)</span>
                 </div>
                 <p className="text-sm md:text-base text-text-secondary">Assisted in developing responsive UI components using React and Tailwind CSS for a local SaaS startup.</p>
               </div>
@@ -117,11 +117,11 @@ export default function About() {
           
           <div className="pt-10 grid grid-cols-2 gap-8 md:gap-12 border-t border-white/10 text-center sm:text-left">
             <div>
-              <h3 className="text-4xl md:text-5xl font-bold text-accent mb-2">25+</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-accent mb-2">5+</h3>
               <p className="text-text-secondary uppercase tracking-widest text-[10px] md:text-xs">Projects Completed</p>
             </div>
             <div>
-              <h3 className="text-4xl md:text-5xl font-bold text-accent mb-2">5+</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-accent mb-2">1+</h3>
               <p className="text-text-secondary uppercase tracking-widest text-[10px] md:text-xs">Years Experience</p>
             </div>
           </div>
