@@ -86,7 +86,7 @@ export default function Navbar() {
             <ThemeToggle />
             <MagneticButton className="hidden md:block">
               <a 
-                href="/resume.pdf" 
+                href="https://drive.google.com/file/d/17NuXjMbzg2Ssnf8PJQ7BWB8gno43-XzU/view?usp=sharing" 
                 target="_blank" 
                 className="px-6 py-2 bg-text-primary text-bg-primary rounded-full text-sm font-bold hover:opacity-90 transition-opacity"
               >

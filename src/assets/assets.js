@@ -8,25 +8,17 @@ export const personalInfo = {
     name: "Dipu",
     designation: "React & Next.js Specialist | Full Stack Developer",
     email: "dipurd19@email.com",
-    phone: "+880 1234 567890",
-    whatsapp: "+880 1234 567890",
+    phone: "+880 1701 974476",
+    whatsapp: "+880 1701 974476",
     location: "Dhaka, Bangladesh",
-    journey: "My programming journey started 5 years ago when I first discovered the power of JavaScript. Since then, I've mastered React and Next.js, building high-performance web applications with a focus on modern architecture and seamless user experiences. I've built over 25 projects, constantly pushing myself to leverage the latest features of Next.js and MERN stack.",
+    journey: "My programming journey started 1+ years ago when I first discovered the power of JavaScript. Since then, I've mastered React and Next.js, building high-performance web applications with a focus on modern architecture and seamless user experiences. I've built over 25 projects, constantly pushing myself to leverage the latest features of Next.js and MERN stack.",
     workType: "I specialize in building server-side rendered (SSR) and static site generated (SSG) applications using Next.js. I enjoy crafting interactive, cinematic web experiences that combine technical excellence with state-of-the-art animations.",
     hobbies: "Outside of coding, I'm a passionate soccer fan, I enjoy traveling to new places, and I occasionally indulge in digital painting to explore my creative side.",
-    education: [
-        {
-            degree: "B.Tech in Computer Science",
-            institution: "Dhaka International University",
-            year: "2020 - 2024",
-            details: "Completed with a CGPA of 3.8/4.0. Focused on Software Engineering, Data Structures, and Web Technologies."
-        }
-    ],
+//  education
     socials: [
-        { icon: FiLinkedin, link: "https://www.linkedin.com/in/dipu-reactdev" },
+        { icon: FiLinkedin, link: "https://www.linkedin.com/in/dipu-nextdev" },
         { icon: FiGithub, link: "https://github.com/Navied-dipu" },
-        { icon: FiTwitter, link: "https://twitter.com" },
-        { icon: FiFacebook, link: "https://facebook.com" }
+        { icon: FiFacebook, link: "https://www.facebook.com/naviedsiddque.dipu" }
     ]
 }
 
@@ -34,17 +26,17 @@ export const skillsData = [
     {
         icon: FaReact,
         title: 'Frontend Mastery',
-        technologies: ['React 19', 'Next.js 15', 'TailwindCSS v4', 'GSAP', 'Framer Motion', 'TypeScript']
+        technologies: ['React 19', 'Next.js 15', 'TailwindCSS v4', 'GSAP', 'Framer Motion', 'TypeScript', 'JavaScript']
     },
     {
         icon: FaMicrochip,
         title: 'Backend Expertise',
-        technologies: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'REST APIs', 'JWT Auth']
+        technologies: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'REST APIs', 'JWT Auth', 'BetterAuth']
     },
     {
         icon: FaDesktop,
         title: 'Modern Workflow',
-        technologies: ['Vercel', 'Docker', 'Git/GitHub', 'CI/CD Pipelines', 'Figma', 'Testing']
+        technologies: ['Vercel', 'Netlify', 'Git/GitHub', 'Figma', ]
     }
 ]
 

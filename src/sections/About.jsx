@@ -71,7 +71,7 @@ export default function About() {
             content={personalInfo.journey} 
           />
           
-          <div className="max-w-xl">
+          {/* <div className="max-w-xl">
             <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 flex items-center gap-4">
               <span className="w-8 h-[1px] bg-accent" /> Education
             </h3>
@@ -85,7 +85,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="max-w-xl">
             <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 flex items-center gap-4">
