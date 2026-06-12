@@ -43,37 +43,26 @@ export const skillsData = [
 export const projectData = [
     {
         id: "project-1",
-        title: 'NextGen Health Portal',
-        description: 'A Next.js 15 powered healthcare management system with server actions and optimized performance.',
-        image: 'https://plus.unsplash.com/premium_photo-1661293879952-c5c093282801?w=800&auto=format&fit=crop&q=60',
-        tech: ['Next.js 15', 'React 19', 'MongoDB', 'TailwindCSS'],
-        liveLink: "https://example.com",
-        githubLink: "https://github.com/Navied-dipu/project1",
+        title: 'PetHub to adopet pet',
+        description: 'A full-stack platform for browsing pets and managing adoption requests.',
+        image: 'https://i.ibb.co.com/VYGC0PKP/image.png',
+        tech: ['Next.js 15', 'React 19', 'MongoDB', 'TailwindCSS', 'BetterAuth'],
+        liveLink: "https://pet-hub-client-three.vercel.app",
+        githubLink: "https://github.com/Navied-dipu/pet-hub-server",
         challenges: "Implementing complex server actions for real-time scheduling while maintaining strict type safety across the application.",
         improvements: "Planning to integrate AI-driven diagnosis assistance using OpenAI API."
     },
     {
         id: "project-2",
-        title: 'FurniCraft E-commerce',
-        description: 'A premium furniture store with 3D previews and dynamic Next.js routing.',
-        image: 'https://plus.unsplash.com/premium_photo-1684769161054-2fa9a998dcb6?w=800&auto=format&fit=crop&q=60',
-        tech: ['Next.js', 'Three.js', 'Redux Toolkit', 'TailwindCSS'],
-        liveLink: "https://example.com",
-        githubLink: "https://github.com/Navied-dipu/project2",
+        title: 'Tiles Gallery  Tile Showcase Platform',
+        description: 'A premium Tile Showcase Platform .',
+        image: 'https://i.ibb.co.com/pjQ3vRvj/image.png',
+        tech: ['Next.js', 'TailwindCSS', 'BetterAuth'],
+        liveLink: "https://tiles-gallery-a8.vercel.app",
+        githubLink: "https://github.com/Navied-dipu/tiles-gallery-a8/tree/main",
         challenges: "Optimizing LCP (Largest Contentful Paint) for 3D heavy pages and ensuring smooth transitions between furniture models.",
         improvements: "Adding Augmented Reality (AR) features for room placement visualization."
     },
-    {
-        id: "project-3",
-        title: 'Collaborative Design Hub',
-        description: 'Real-time collaborative platform with Next.js API routes and Socket.io.',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=60',
-        tech: ['Socket.io', 'Next.js', 'Node.js', 'Framer Motion'],
-        liveLink: "https://example.com",
-        githubLink: "https://github.com/Navied-dipu/project3",
-        challenges: "Managing real-time state synchronization across multiple users without compromising server-side rendering performance.",
-        improvements: "Implementing a version history feature for shared design boards."
-    }
 ]
 
 export const profileData = [
@@ -83,13 +72,8 @@ export const profileData = [
         technologies : ['React & Next.js Specialist', 'MERN Stack Mastery']
     },
     {
-        icon: FaSchool,
-        title: 'Background',
-        technologies : ['B.Tech in CS (DIU)']
-    },
-    {
         icon: FaDiagramProject,
         title: 'Impact',
-        technologies : ['25+ Production Projects']
+        technologies : ['5+ Production Projects']
     },
 ]

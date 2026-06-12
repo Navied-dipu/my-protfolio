@@ -86,7 +86,7 @@ export default function Hero() {
                 View My Work
               </MagneticButton>
               <div className="flex gap-4 justify-center">
-                <a href="/resume.pdf" target="_blank" className="flex-1 md:flex-none">
+                <a href="https://drive.google.com/file/d/17NuXjMbzg2Ssnf8PJQ7BWB8gno43-XzU/view?usp=sharing" target="_blank" className="flex-1 md:flex-none">
                   <MagneticButton className="w-full px-6 py-3 md:px-8 md:py-4 border border-white/10 rounded-full font-semibold text-base md:text-lg hover:bg-white/5 transition-colors text-center">
                     Resume
                   </MagneticButton>
