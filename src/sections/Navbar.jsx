@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { navMenu } from '../assets/assets';
 import { useLenis } from 'lenis/react';
 import ThemeToggle from '../components/ThemeToggle';
 import MagneticButton from '../components/MagneticButton';
@@ -14,6 +13,15 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const lenis = useLenis();
+
+  // Defined your navigation layout cleanly inside the component
+  const navMenu = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Skills", href: "/skills" },
+    { label: "Work", href: "/work" },
+    { label: "Contact", href: "/contact" }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +38,8 @@ export default function Navbar() {
   }, [lastScrollY, isOpen]);
 
   const scrollToSection = (id) => {
+    if (!id) return;
+    
     const target = id.toLowerCase() === 'home' ? '#home' : 
                    id.toLowerCase() === 'work' ? '#work' : 
                    id.toLowerCase() === 'skills' ? '#skills' : 
@@ -71,10 +81,10 @@ export default function Navbar() {
             {navMenu.map((item, idx) => (
               <button
                 key={idx}
-                onClick={() => scrollToSection(item)}
+                onClick={() => scrollToSection(item.label)}
                 className="relative px-4 py-2 text-sm font-semibold text-text-secondary hover:text-text-primary transition-colors duration-300"
               >
-                {item}
+                {item.label}
               </button>
             ))}
           </div>
@@ -88,6 +98,7 @@ export default function Navbar() {
               <a 
                 href="https://drive.google.com/file/d/17NuXjMbzg2Ssnf8PJQ7BWB8gno43-XzU/view?usp=sharing" 
                 target="_blank" 
+                rel="noopener noreferrer"
                 className="px-6 py-2 bg-text-primary text-bg-primary rounded-full text-sm font-bold hover:opacity-90 transition-opacity"
               >
                 Resume
@@ -109,16 +120,17 @@ export default function Navbar() {
             {navMenu.map((item, idx) => (
               <button
                 key={idx}
-                onClick={() => scrollToSection(item)}
+                onClick={() => scrollToSection(item.label)}
                 className="w-full text-left px-6 py-4 text-lg font-bold text-text-primary hover:bg-white/5 rounded-2xl transition-colors"
               >
-                {item}
+                {item.label}
               </button>
             ))}
             <div className="h-[1px] bg-white/10 w-full my-2" />
             <a 
-              href="/resume.pdf" 
+              href="https://drive.google.com/file/d/17NuXjMbzg2Ssnf8PJQ7BWB8gno43-XzU/view?usp=sharing" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="w-full py-4 bg-text-primary text-bg-primary rounded-2xl text-center font-bold"
             >
               Resume

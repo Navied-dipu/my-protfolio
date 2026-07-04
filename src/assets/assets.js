@@ -2,7 +2,7 @@ import { FaCode, FaDesktop, FaMicrochip, FaMobile, FaReact, FaDiagramProject, Fa
 import { FiGithub, FiLinkedin, FiTwitter, FiFacebook, FiMail, FiPhone } from 'react-icons/fi'
 import { SiNextdotjs, SiTailwindcss, SiFramer, SiMongodb, SiNodedotjs, SiExpress } from 'react-icons/si'
 
-export const navMenu = ['Home', 'About', 'Skills', 'Work', 'Contact']
+// export const navMenu = ['Home', 'About', 'Skills', 'Work', 'Contact']
 
 export const personalInfo = {
     name: "Dipu",
@@ -43,23 +43,34 @@ export const skillsData = [
 export const projectData = [
     {
         id: "project-1",
+        title: 'Woo-AI Prompt Platform ',
+        description: 'A full-stack AI prompt marketplace with secure authentication and role-based access control.',
+        image: 'https://i.ibb.co.com/Myww0Gjy/image.png',
+        tech: ['Next.js 16', 'React 19', 'MongoDB', 'TailwindCSS', 'BetterAuth'],
+        liveLink: "https://woo-ai-cyan.vercel.app",
+        githubLink: "https://github.com/Navied-dipu/woo-ai-client",
+        challenges: "A full-stack AI prompt marketplace with secure authentication and role-based access control.",
+        improvements: "Planning to integrate AI-driven diagnosis assistance using Claude API."
+    },
+    {
+        id: "project-2",
         title: 'PetHub to adopet pet',
         description: 'A full-stack platform for browsing pets and managing adoption requests.',
         image: 'https://i.ibb.co.com/VYGC0PKP/image.png',
         tech: ['Next.js 15', 'React 19', 'MongoDB', 'TailwindCSS', 'BetterAuth'],
         liveLink: "https://pet-hub-client-three.vercel.app",
-        githubLink: "https://github.com/Navied-dipu/pet-hub-server",
+        githubLink: "https://github.com/Navied-dipu/pet-hub-client",
         challenges: "Implementing complex server actions for real-time scheduling while maintaining strict type safety across the application.",
-        improvements: "Planning to integrate AI-driven diagnosis assistance using OpenAI API."
+        improvements: "Planning to integrate AI-driven diagnosis assistance using Claude, Cuesor API."
     },
     {
-        id: "project-2",
+        id: "project-3",
         title: 'Tiles Gallery  Tile Showcase Platform',
         description: 'A premium Tile Showcase Platform .',
         image: 'https://i.ibb.co.com/pjQ3vRvj/image.png',
         tech: ['Next.js', 'TailwindCSS', 'BetterAuth'],
         liveLink: "https://tiles-gallery-a8.vercel.app",
-        githubLink: "https://github.com/Navied-dipu/tiles-gallery-a8/tree/main",
+        githubLink: "https://github.com/Navied-dipu/tiles-gallery-a8",
         challenges: "Optimizing LCP (Largest Contentful Paint) for 3D heavy pages and ensuring smooth transitions between furniture models.",
         improvements: "Adding Augmented Reality (AR) features for room placement visualization."
     },
