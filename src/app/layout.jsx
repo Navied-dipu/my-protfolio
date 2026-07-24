@@ -1,28 +1,12 @@
-import { Inter, Outfit, Space_Grotesk, Orbitron } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import Navbar from "@/sections/Navbar";
-import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 
-const inter = Inter({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-});
-
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  variable: "--font-orbitron",
+  variable: "--font-jetbrains-mono",
 });
 
 export const metadata = {
@@ -34,12 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${outfit.variable} ${spaceGrotesk.variable} ${orbitron.variable} antialiased`}
+        className={`${jetbrainsMono.variable} ${jetbrainsMono.className} antialiased`}
       >
         <Providers>
-          <div className="bg-bg-primary min-h-screen selection:bg-white selection:text-black">
+          <div className="bg-bg-primary min-h-screen selection:bg-text-primary selection:text-bg-primary">
             <ScrollProgress />
-            <CustomCursor />
             <Navbar />
             <main>{children}</main>
           </div>

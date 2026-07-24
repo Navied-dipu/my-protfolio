@@ -7,7 +7,7 @@ import { SiNextdotjs, SiTailwindcss, SiFramer, SiMongodb, SiNodedotjs, SiExpress
 export const personalInfo = {
     name: "Dipu",
     designation: "React & Next.js Specialist | Full Stack Developer",
-    email: "dipurd19@email.com",
+    email: "dipu.navied@gmail.com",
     phone: "+880 1701 974476",
     whatsapp: "+880 1701 974476",
     location: "Dhaka, Bangladesh",
